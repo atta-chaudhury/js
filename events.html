@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test app</title>
+	<meta charset="utf-8" viewport="">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+     </ul>
+</header>
+<hr>
+
+<h3 id="mm">This is events page</h3>
+
+
+<script>
+	var ma = ['hello' , 'hy' , 'hii'];
+	var i = 0;
+	function a(){
+        document.getElementById('mm').innerHTML = ma[i];
+        i++ ;
+        if(i == 3){
+           i = 0;
+        };
+    };
+   setInterval(a , 4000);
+
+</script>
+</body>
+</html>
